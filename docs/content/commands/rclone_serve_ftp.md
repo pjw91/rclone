@@ -44,7 +44,7 @@ it to flush all directory caches, regardless of how old they are.
 Assuming only one rclone instance is running, you can reset the cache
 like this:
 
-    kill -SIGHUP $(pidof rclone)
+    kill -HUP $(pidof rclone)
 
 If you configure rclone with a [remote control](/rc) then you can use
 rclone rc to flush the whole directory cache:
